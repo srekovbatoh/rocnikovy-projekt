@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Články o hladovaní pre začiatočníkov aj pokročilých.">
+    <title>Návody a nástroje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hladovky</div>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O hladovaní</a></li>
+                <li><a href="guides.html">Návody a nástroje</a></li>
+                <li><a href="health.html">Zdravie a bezpečnosť</a></li>
+                <li><a href="community.html">Komunita</a></li>
+                <li><a href="resources.html">Zdroje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <section class="guides article">
+                <div class = header-container>
+                    <h1 id="navod">Návody a nástroje</h1>
+                    <button class="cta read-more" data-target="articles">Čítaj viac</button>
+                </div>
+            <div class="guides-content">
+                <div class="side-panel left-panel">
+                    <h3>Motivačný citát</h3>
+                    <blockquote>
+                        „Pôst je očista tela i mysle – objav svoju vnútornú silu.“<br>
+                        <cite>– Staroveká múdrosť</cite>
+                    </blockquote>
+                </div>
+                <div class="quiz-container">
+                    <h2>Kvíz o hladovaní</h2>
+                    <form id="quiz-form">
+                        <div class="quiz-question">
+                            <p>1. Čo znamená intermitentné hladovanie 16/8?</p>
+                            <label><input type="radio" name="q1" value="a"> 16 hodín jedenia, 8 hodín pôstu</label><br>
+                            <label><input type="radio" name="q1" value="b"> 16 hodín pôstu, 8 hodín jedenia</label><br>
+                            <label><input type="radio" name="q1" value="c"> 16 dní bez jedla</label>
+                        </div>
+                        <div class="quiz-question">
+                            <p>2. Čo je odporúčané piť počas pôstu?</p>
+                            <label><input type="radio" name="q2" value="a"> Sladené nápoje</label><br>
+                            <label><input type="radio" name="q2" value="b"> Voda, čierna káva, čaj bez cukru</label><br>
+                            <label><input type="radio" name="q2" value="c"> Mlieko</label>
+                        </div>
+                        <div class="quiz-question">
+                            <p>3. Čo pomáha zvládnuť hlad počas pôstu?</p>
+                            <label><input type="radio" name="q3" value="a"> Jesť malé snacky</label><br>
+                            <label><input type="radio" name="q3" value="b"> Zostať hydratovaný a zamestnaný</label><br>
+                            <label><input type="radio" name="q3" value="c"> Spať celý deň</label>
+                        </div>
+                        <button type="submit" class="quiz-submit">Odoslať odpovede</button>
+                    </form>
+                    <div id="quiz-result"></div>
+                </div>
+                <div class="side-panel right-panel">
+                    <h3>Rýchle tipy na pôst</h3>
+                    <ul>
+                        <li>Pite aspoň 2 litre vody denne.</li>
+                        <li>Skúste meditáciu na zníženie stresu.</li>
+                        <li>Plánujte jedlá vopred.</li>
+                        <li>Počúvajte svoje telo a začnite pomaly.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="articles" id="articles">
+            <h1 id = "clanok">Články</h1>
+            <div class="articles-grid">
+                <article class="article-card" id="article-beginner">
+                    <h2>Ako začať s intermitentným hladovaním (16/8)</h2>
+                    <p>Intermitentné hladovanie 16/8 znamená 16 hodín bez jedla a 8-hodinové okno na jedenie. Je ideálne pre začiatočníkov, pretože je jednoduché a flexibilné.</p>
+                    <h3>Kroky na začiatok:</h3>
+                    <ul>
+                        <li>Vyberte si 8-hodinové okno (napr. 10:00–18:00).</li>
+                        <li>Pite vodu, čiernu kávu alebo čaj bez cukru počas pôstu.</li>
+                        <li>Začnite s ľahkými jedlami, ako sú zeleninové polievky alebo šaláty.</li>
+                    </ul>
+                    <p>Príklad: Raňajky vynechajte, obed o 12:00 a večeru do 20:00. Postupne si telo zvykne.</p>
+                </article>
+                <article class="article-card" id="article-tips">
+                    <h2>Tipy na úspešné hladovanie</h2>
+                    <p>Hladovanie môže byť náročné, ale s týmito tipmi ho zvládnete ľahšie:</p>
+                    <ul>
+                        <li>Zostaňte hydratovaní: Pite 2–3 litre vody denne.</li>
+                        <li>Zabavte sa: Čítajte, pracujte alebo cvičte, aby ste nemysleli na hlad.</li>
+                        <li>Plánujte jedlá: Pripravte si zdravé jedlá, napr. bryndzové nátierky s celozrnným chlebom.</li>
+                    </ul>
+                </article>
+                <article class="article-card" id="article-myths">
+                    <h2>Mýty o hladovaní</h2>
+                    <p><strong>Mýtus</strong>: Hladovanie spôsobuje stratu svalov.<br>
+                       <strong>Pravda</strong>: Krátkodobé hladovanie chráni svaly, ak kombinujete s cvičením.</p>
+                    <p><strong>Mýtus</strong>: Musíte jesť každé 3 hodiny.<br>
+                       <strong>Pravda</strong>: Telo zvládne dlhšie obdobia bez jedla.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hladovky. Všetky práva vyhradené.</p>
+        <a href="contact.html">Kontakt</a> | <a href="#">Prihlásiť sa na newsletter</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

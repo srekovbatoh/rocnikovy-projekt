@@ -1,0 +1,364 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #2e7d32;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #4caf50, #81c784);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    background-color: #1b5e20;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 15%;
+}
+
+.cta:hover {
+    background-color: #2e7d32;
+}
+
+/* Testimonials */
+.testimonials {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Guides Section */
+.guides {
+    max-width: 2060px;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all child elements horizontally */
+    text-align: center; /* Center text content */
+}
+.guides .header-container {
+    width: 100%;
+    height: 130px;
+    background-color: #dfdede;
+    border-radius: 5px;
+    border: 9px solid rgb(202, 202, 202);
+    margin-bottom: 20px;
+}
+
+.guides h1#navod {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    width: 100%; /* Ensure h1 takes full width for centering */
+}
+
+.guides .cta.read-more {
+    background-color: #1b5e20;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center; /* Center the button */
+    margin-bottom: 1rem; /* Space between button and content below */
+}
+
+.guides .cta.read-more:hover {
+    background-color: #2e7d32;
+}
+
+/* Guides Content (Container for Quiz and Side Panels) */
+.guides-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    gap: 2rem; /* Space between quiz and side panels */
+    width: 100%;
+    align-items: center;
+}
+
+/* Side Panels */
+.side-panel {
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Left-align for readability */
+}
+
+.side-panel h3 {
+    font-size: 1.2rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.side-panel blockquote {
+    font-style: italic;
+    color: #333;
+    border-left: 4px solid #2e7d32;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.side-panel cite {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.side-panel ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.side-panel ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Quiz Container */
+.quiz-container {
+    max-width: 600px; /* Matches previous quiz width */
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack quiz elements vertically */
+    align-items: center; /* Center quiz content */
+}
+
+.quiz-container h2 {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.quiz-question {
+    width: 100%; /* Full width for questions */
+    margin-bottom: 1.5rem;
+    text-align: left; /* Left-align answers for readability */
+}
+
+.quiz-question p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-question label {
+    display: block; /* Stack radio buttons vertically */
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+}
+
+.quiz-submit {
+    background-color: #1b5e20;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center; /* Center the submit button */
+}
+
+.quiz-submit:hover {
+    background-color: #2e7d32;
+}
+
+#quiz-result {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: center; /* Center the result text */
+}
+
+/* Articles Section */
+#clanok {
+    margin-left: 11%;
+    width: 8%;
+    box-shadow: 25px 20px 1px green, -25px -20px 1px green;
+    background-color: green;
+    color: white;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.article-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    aspect-ratio: 1 / 1; /* Makes cards square */
+    text-align: left;
+    overflow-y: auto; /* Allows scrolling within card if content overflows */
+}
+
+.article-card h2 {
+    margin-bottom: 1rem;
+    color: #2e7d32;
+    font-size: 1.2rem;
+}
+
+.article-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.article-card p, .article-card ul {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.article-card ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+.cta_read-more {
+    background-color: #1b5e20;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cta_read-more:hover {
+    background-color: #2e7d32;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .guides-content {
+        flex-direction: column; /* Stack panels and quiz vertically on smaller screens */
+        align-items: center;
+    }
+    
+    .side-panel {
+        max-width: 600px; /* Match quiz width for consistency */
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    #clanok {
+        margin-left: 0; /* Center the #clanok element on smaller screens */
+        width: auto; /* Remove fixed width for responsiveness */
+    }
+}
