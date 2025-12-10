@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Návody, kvíz a tipy na intermitentné hladovanie.">
+    <title>Návody a nástroje | Nutričný spotter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Nutričný spotter" width="87" height="60">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O hladovaní</a></li>
+                <li><a href="guides.html">Návody a nástroje</a></li>
+                <li><a href="health.html">Zdravie a bezpečnosť</a></li>
+                <li><a href="community.html">Komunita</a></li>
+                <li><a href="resources.html">Zdroje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 7rem 2rem;">
+            <h1 style="font-size: 2.8rem;">Návody a nástroje</h1>
+            <p style="font-size: 1.35rem; margin-top: 1rem;">Všetko, čo potrebuješ na úspešný štart</p>
+        </section>
+        <section style="padding: 4rem 2rem; background: #f4f9f4;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+
+                <div class="equal-height-grid">
+                    <div class="side-panel">
+                        <h3>Motivačný citát</h3>
+                        <blockquote>
+                            „Pôst nie je o hladovaní.<br>
+                            Je o oslobodení sa od neustáleho jedenia.“
+                        </blockquote>
+                        <cite>– Dr. Jason Fung</cite>
+                    </div>
+                    <div class="quiz-container">
+                        <h2>Zisti, aký pôst je pre teba ideálny</h2>
+                        <form id="quiz-form">
+                            <div class="quiz-question">
+                                <p><strong>1. Aký je tvoj hlavný cieľ?</strong></p>
+                                <label><input type="radio" name="q1" value="a"> Chudnutie</label><br><br>
+                                <label><input type="radio" name="q1" value="b"> Zdravie a energia</label><br><br>
+                                <label><input type="radio" name="q1" value="c"> Mentálna jasnosť</label>
+                            </div>
+                            <button type="submit" class="cta" style="margin-top: 1.5rem; padding: 0.9rem 2rem; width: auto;">
+                                Zobraziť výsledok
+                            </button>
+                        </form>
+                        <div id="quiz-result" style="margin-top: 1rem; font-weight: bold; color: #2e7d32;"></div>
+                    </div>
+                    <div class="side-panel">
+                        <h3>Rýchle tipy na úspech</h3>
+                        <ul>
+                            <li>Pite 2,5 – 3 litre vody denne</li>
+                            <li>Čierna káva a čaj bez cukru sú OK</li>
+                            <li>Pridajte štipku himalájskej soli</li>
+                            <li>Začnite pomaly: najskôr 12 → 16 hodín</li>
+                            <li>Počúvajte svoje telo</li>
+                            <li>Cvičte ľahko – prechádzky, jóga</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 4rem;">
+                    <button class="cta read-more" data-target="articles" style="padding: 1rem 3rem; font-size: 1.2rem;">
+                        Zobraziť všetky články →
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="articles" id="articles" style="display: none;">
+            <div style="max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; background: #fff;">
+                <h1 style="text-align: center; font-size: 2.4rem; margin-bottom: 2.5rem; color: #2e7d32;">
+                    Najdôležitejšie návody na jednom mieste
+                </h1>
+
+                <div class="articles-grid" style="gap: 1.8rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    
+                    <article class="article-card" style="padding: 1.8rem; line-height: 1.85; font-size: 1.08rem;">
+                        <h2 style="font-size: 1.45rem; margin-bottom: 0.8rem; color: #2e7d32;">
+                            Ako začať s 16/8
+                        </h2>
+                        <p>• Prvé jedlo o 12:00 – 14:00<br>
+                           • Posledné jedlo do 20:00 – 22:00<br>
+                           • Počas pôstu: voda, čierna káva, čaj bez cukru<br>
+                           • Začnite pomaly – najskôr 12 hodín, potom 16</p>
+                    </article>
+
+                    <article class="article-card" style="padding: 1.8rem; line-height: 1.85; font-size: 1.08rem;">
+                        <h2 style="font-size: 1.45rem; margin-bottom: 0.8rem; color: #2e7d32;">
+                            Čo smiem piť?
+                        </h2>
+                        <p><strong>Povolené:</strong> voda, perlivá voda, čierna káva, zelený/čierny/bylinkový čaj, citrónová voda (bez cukru)<br>
+                           <strong>Zakázané:</strong> mlieko, smotana, džúsy, sladené nápoje, alkohol</p>
+                    </article>
+
+                    <article class="article-card" style="padding: 1.8rem; line-height: 1.85; font-size: 1.08rem;">
+                        <h2 style="font-size: 1.45rem; margin-bottom: 0.8rem; color: #2e7d32;">
+                            5 tipov, ako zvládnuť hlad
+                        </h2>
+                        <p>1. Pite veľa vody<br>
+                           2. Pridajte štipku himalájskej soli<br>
+                           3. Zamestnajte sa (práca, prechádzka)<br>
+                           4. Ľahké cvičenie (jóga, chôdza)<br>
+                           5. Spite aspoň 7–8 hodín</p>
+                    </article>
+
+                    <article class="article-card" style="padding: 1.8rem; line-height: 1.85; font-size: 1.08rem;">
+                        <h2 style="font-size: 1.45rem; margin-bottom: 0.8rem; color: #2e7d32;">
+                            Mýty vs. realita
+                        </h2>
+                        <p><strong>„Stratiť svaly“</strong> → nie, telo ich chráni<br>
+                           <strong>„Spomalí sa metabolizmus“</strong> → nie, môže sa zrýchliť<br>
+                           <strong>„Po pôste sa priberie viac“</strong> → nie, ak sa vrátiš k normálnemu stravovaniu</p>
+                    </article>
+
+                    <article class="article-card" style="padding: 1.8rem; line-height: 1.85; font-size: 1.08rem;">
+                        <h2 style="font-size: 1.45rem; margin-bottom: 0.8rem; color: #2e7d32;">
+                            OMAD (23:1) – pre pokročilých
+                        </h2>
+                        <p>• Jedno veľké jedlo za deň (napr. o 18:00)<br>
+                           • Maximálna jednoduchosť<br>
+                           • Veľa energie a mentálnej jasnosti<br>
+                           • Ideálne po 2–3 mesiacoch praxe</p>
+                    </article>
+
+                    <article class="article-card" style="padding: 1.8rem; line-height: 1.85; font-size: 1.08rem;">
+                        <h2 style="font-size: 1.45rem; margin-bottom: 0.8rem; color: #2e7d32;">
+                            Kedy prerušiť pôst?
+                        </h2>
+                        <p>Začni ľahko: vývar, avokádo, vajcia, oriešky<br>
+                           Vyhnite sa: ťažké jedlá, vyprážané, sladké<br>
+                           Jedz pomaly a vychutnávaj</p>
+                    </article>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <button onclick="document.getElementById('articles').style.display='none'" 
+                            class="cta" style="background: #d32f2f; padding: 0.9rem 2.5rem; font-size: 1.1rem;">
+                        Zavrieť
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <p>© 2025 Nutričný spotter. Všetky práva vyhradené.</p>
+        <a href="contact.html">Kontakt</a> | <a href="#">Prihlásiť sa na newsletter</a>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

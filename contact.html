@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Nutričný spotter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Nutričný spotter" width="87" height="60">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O hladovaní</a></li>
+                <li><a href="guides.html">Návody a nástroje</a></li>
+                <li><a href="health.html">Zdravie a bezpečnosť</a></li>
+                <li><a href="community.html">Komunita</a></li>
+                <li><a href="resources.html">Zdroje</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 6rem 2rem;">
+            <h1>Napíš nám</h1>
+            <p>Rád ti pomôžeme na tvojej ceste s hladovaním.</p>
+        </section>
+
+        <section style="max-width: 700px; margin: 3rem auto; padding: 2rem;">
+            <form id="contact-form" style="background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <label for="name">Meno a priezvisko</label><br>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+                <label for="message">Správa</label><br>
+                <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem; border: 1px solid #ccc; border-radius: 5px;"></textarea><br>
+
+                <button type="submit" class="cta" style="width: 100%; padding: 1rem; font-size: 1.1rem;">Odoslať správu</button>
+            </form>
+            <div id="form-result" style="margin-top: 1rem; text-align: center; font-weight: bold;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Nutričný spotter. Všetky práva vyhradené.</p>
+        <a href="contact.html">Kontakt</a> | <a href="#">Prihlásiť sa na newsletter</a>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
